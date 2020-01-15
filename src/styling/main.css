@@ -1,5 +1,11 @@
+div{
+    width: 100%;
+}
+.swipe-cont{
+    overflow-x: hidden;
+    max-width: 100vw;
+}
 .swipe-nav{
-    width: 100vw;
     height: 85.91px;
     background: #000000;
     padding: 20px;
@@ -37,11 +43,9 @@
 }
 .sec2{
     margin-top: 39.25px;
-    min-width: 450px;
 }
 .sm-card{
-    width: 212.74px;
-    min-width: 212.74px;
+    width: 45%;
     height: 248.67px;
     margin: 0 6.11px 6.11px;
     background: #C4C4C4;
@@ -66,12 +70,12 @@
     display: none;
 }
 .sec3-b{
-    width: 527.89px;
     height: 238.06px;
 }
 .sec3-b1{
     width: 400px;
     justify-content: space-between;
+    padding: 0 5%;
 }
 .num{
     width: 116px;
@@ -86,6 +90,7 @@
 .btn-cont{
     justify-content: center;
     flex-direction: column;
+    width: fit-content;
 }
 .cnt-btn{
     width: 130px;
@@ -115,12 +120,23 @@ color: #FFFFFF;
     display: none;
 }
 
+@media screen and (min-width: 400px) {
+    .sec2{
+        margin-top: 39.25px;
+        min-width: 450px;
+    }
+    .sm-card {
+        width: 212.74px;
+        min-width: 212.74px;
+    }
+}
+
 @media screen and (min-width: 1000px) {
     .nav-right{
         width: 710.41px;
     }
     .sec4-card{
-        margin: 0 10px;
+        margin: 0 15px;
     }
     .big, .md, .one, .green{
         display: block;
@@ -133,6 +149,7 @@ color: #FFFFFF;
     }
     .sec2{
         flex-wrap: nowrap;
+        overflow: hidden;
     }
     .sec3{
         display: flex;

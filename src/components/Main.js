@@ -22,7 +22,7 @@ class Main extends React.Component {
                     <div className="sw-nav-box nav-left"></div>
                     <div className="sw-nav-box nav-right"></div>
                 </div>
-                <div className="swipe-main">
+                <div className="swipe-main" style={{padding: '0 22px'}}>
                     <div className="sec1">
                         <div className="md-card"></div>
                         <div className="md-card"></div>
@@ -32,7 +32,7 @@ class Main extends React.Component {
                         <div className="md-card"></div>
                         <div className="md-card"></div>
                     </div>
-                    <div className="sec2 flex wrap">
+                    <div className="sec2 flex flex-jc-ct wrap">
                         <div className="sm-card"></div>
                         <div className="sm-card dkp"></div>
                         <div className="sm-card one"></div>
@@ -56,12 +56,12 @@ class Main extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className="sec4 flex flex-ai-ct">
-                        <div className="flex fit centered">
-                            <div className="sec4-card big"></div>
-                            <div className="sec4-card md"></div>
-                            <div className="sec4-card sm"></div>
-                        </div>
+                </div>
+                <div className="sec4 flex flex-ai-ct">
+                    <div className="flex fit centered">
+                        <div className="sec4-card big"></div>
+                        <div className="sec4-card md"></div>
+                        <div className="sec4-card sm"></div>
                     </div>
                 </div>
             </div>
