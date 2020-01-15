@@ -1,0 +1,131 @@
+.swipe-nav{
+    width: 100vw;
+    height: 85.91px;
+    background: #000000;
+    padding: 20px;
+}
+.sw-nav-box{
+    height: 45.45px;
+    background: #464646;
+}
+.nav-left{
+    width: 122.24px;
+    float: left;
+}
+.nav-right{
+    width: 56.34px;
+    float: right;
+}
+.sec1{
+    margin-top: 39.25px;
+    overflow-x: auto;
+    display: flex;
+}
+.md-card{
+    width: 287.61px;
+    min-width: 287.61px;
+    height: 336.17px;
+    background: #C4C4C4;
+    margin: 0 13.13px;
+}
+.circle{
+    width: 105.79px;
+    height: 105.79px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+}
+.sec2{
+    margin-top: 39.25px;
+    min-width: 450px;
+}
+.sm-card{
+    width: 212.74px;
+    min-width: 212.74px;
+    height: 248.67px;
+    margin: 0 6.11px 6.11px;
+    background: #C4C4C4;
+}
+.dkp{
+    background: #9E00FF;
+}
+.green{
+    background: #00FF66;
+    display: none;
+}
+.lkp{
+    background: #BD00FF;
+}
+.one{
+    display: none;
+}
+.sec3{
+    margin-top: 39.25px;
+}
+.sec3-a{
+    display: none;
+}
+.sec3-b{
+    width: 527.89px;
+    height: 238.06px;
+}
+.sec3-b1{
+    width: 400px;
+    justify-content: space-between;
+}
+.num{
+    width: 116px;
+    height: 234px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 200px;
+    line-height: 234px;
+    color: #000000;
+}
+.btn-cont{
+    justify-content: center;
+    flex-direction: column;
+}
+.cnt-btn{
+    width: 130px;
+    height: 71.55px;
+    background: #000000;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 18px;
+color: #FFFFFF;
+}
+.sec4{
+    margin-top: 39.25px;
+    width: 100%;
+    height: 318.53px;
+    background: #000000;
+}
+.sec4-card{
+    height: 231.11px;
+    background: #464646;
+}
+.sm{
+    width: 334.86px;
+}
+.big, .md{
+    display: none;
+}
+
+@media screen and (min-width: 1000px) {
+    .sec4-card{
+        margin: 0 10px;
+    }
+    .big, .md{
+        display: block;
+    }
+    .big{
+        width: 565.56px;
+    }
+    .md{
+        width: 392.8px;
+    }
+}
