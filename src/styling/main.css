@@ -116,10 +116,13 @@ color: #FFFFFF;
 }
 
 @media screen and (min-width: 1000px) {
+    .nav-right{
+        width: 710.41px;
+    }
     .sec4-card{
         margin: 0 10px;
     }
-    .big, .md{
+    .big, .md, .one, .green{
         display: block;
     }
     .big{
@@ -127,5 +130,61 @@ color: #FFFFFF;
     }
     .md{
         width: 392.8px;
+    }
+    .sec2{
+        flex-wrap: nowrap;
+    }
+    .sec3{
+        display: flex;
+        justify-content: center;
+        background: #7A7A7A;
+        padding: 170px 53px 190px;
+    }
+    .sec3-a{
+        max-width: 651px;
+        display: block;
+    }
+    .sec3-b1{
+        width: 527.89px;
+        height: 238.06px;
+        background: #C4C4C4;
+        padding: 0 29.2px;
+    }
+    .num{
+        color: white;
+    }
+    .btn-cont{
+        flex-direction: row;
+    }
+    .cnt-btn{
+        color: black;
+        background: white;
+        margin: 0 5px;
+    }
+    .sec3-a{
+        margin-right: 30px;
+    }
+    .sec3-a1{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 52px;
+    line-height: 61px;
+    color: #FFFFFF;
+    }
+    .sec3-a2{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 37px;
+        color: #FFFFFF;
+    }
+    .sec3-a3{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 26px;
+        color: #FFFFFF;
+        max-width: 600px;
     }
 }

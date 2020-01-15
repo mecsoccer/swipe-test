@@ -7,9 +7,9 @@ export default combineReducers({
 function countReducer(state = { count: 2}, action) {
     switch(action.type) {
       case 'INCREMENT':
-        return { ...state };
+        return { ...state, count: action.payload };
       case 'DECREMENT':
-        return { ...state };
+        return { ...state, count: action.payload };
       default:
         return state;
     }

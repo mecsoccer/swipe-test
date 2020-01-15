@@ -1,9 +1,20 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { increment, decrement } from '../actions';
 import '../styling/Index.css';
 import '../styling/main.css';
 
 class Main extends React.Component {
+    incrementOnClick = () => {
+        const newCount = this.props.count + 1;
+        this.props.increment(newCount);
+    }
+
+    decrementOnClick = () => {
+        const newCount = this.props.count -1;
+        this.props.decrement(newCount);
+    }
+
     render() {
         return (
             <div className="swipe-cont">
@@ -31,16 +42,16 @@ class Main extends React.Component {
                     </div>
                     <div className="sec3">
                         <div className="sec3-a">
-                            <h5>This a sample project test</h5>
-                            <p>This a sample project test</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et egestas pretium tincidunt tellus massa pharetra nulla. Rhoncus morbi dui, enim vulputate feugiat vitae amet pellentesque.</p>
+                            <div className="sec3-a1">This a sample project test</div>
+                            <p className="sec3-a2">This a sample project test</p>
+                            <p className="sec3-a3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et egestas pretium tincidunt tellus massa pharetra nulla. Rhoncus morbi dui, enim vulputate feugiat vitae amet pellentesque.</p>
                         </div>
                         <div className="sec3-b flex flex-jc-ct flex-ai-ct">
                             <div className="sec3-b1 flex">
-                                <div className="num">2</div>
+                                <div className="num">{this.props.count}</div>
                                 <div className="btn-cont flex flex-ai-ct">
-                                    <button className="cnt-btn">Add</button>
-                                    <button className="cnt-btn">Minus</button>
+                                    <button className="cnt-btn" onClick={this.incrementOnClick}>Add</button>
+                                    <button className="cnt-btn" onClick={this.decrementOnClick}>Minus</button>
                                 </div>
                             </div>
                         </div>
@@ -58,4 +69,10 @@ class Main extends React.Component {
     }
 }
 
-export default connect()(Main);
+const mapStateToProps = (state, ownProps) => {
+    return {
+        count: state.count.count
+    };
+};
+
+export default connect(mapStateToProps, {increment, decrement})(Main);
