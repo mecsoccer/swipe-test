@@ -141,10 +141,16 @@ color: #FFFFFF;
         display: block;
     }
     .big{
-        width: 565.56px;
+        max-width: 565.56px;
+        width: 40vw;
     }
     .md{
-        width: 392.8px;
+        max-width: 392.8px;
+        width: 30vw;
+    }
+    .sm {
+        max-width: 334.86px;
+        width: 20vw;
     }
     .sec2{
         flex-wrap: nowrap;
@@ -158,11 +164,10 @@ color: #FFFFFF;
         display: flex;
         justify-content: center;
         background: #7A7A7A;
-        padding: 170px 53px 190px;
+        padding: 170px 0 190px;
     }
-    .sec3-a{
-        max-width: 651px;
-        display: block;
+    .sec3-b{
+        width: fit-content;
     }
     .sec3-b1{
         width: 527.89px;
@@ -182,7 +187,9 @@ color: #FFFFFF;
         margin: 0 5px;
     }
     .sec3-a{
-        margin-right: 30px;
+        max-width: 651px;
+        display: block;
+        margin-right: 15px;
     }
     .sec3-a1{
     font-style: normal;
@@ -197,6 +204,7 @@ color: #FFFFFF;
         font-size: 32px;
         line-height: 37px;
         color: #FFFFFF;
+        margin: 8px 0;
     }
     .sec3-a3{
         font-family: Roboto;
@@ -206,5 +214,13 @@ color: #FFFFFF;
         line-height: 26px;
         color: #FFFFFF;
         max-width: 600px;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    html{
+        max-width: 1500px;
+        margin: auto;
     }
 }
