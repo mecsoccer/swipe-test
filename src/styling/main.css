@@ -123,11 +123,10 @@ color: #FFFFFF;
 @media screen and (min-width: 400px) {
     .sec2{
         margin-top: 39.25px;
-        min-width: 450px;
     }
     .sm-card {
-        width: 212.74px;
-        min-width: 212.74px;
+        width: 170.78px;
+        min-width: 165px;
     }
 }
 
@@ -150,6 +149,10 @@ color: #FFFFFF;
     .sec2{
         flex-wrap: nowrap;
         overflow: hidden;
+    }
+    .sm-card {
+        width: 212.74px;
+        min-width: 212.74px;
     }
     .sec3{
         display: flex;
